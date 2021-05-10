@@ -1,4 +1,4 @@
-<h1>Bienvenue sur le site rolling</h1>
+<h1>Bienvenue sur le site roling</h1>
 
 <a href="<?php echo HOST_ADMIN ?>voies/list">Voies</a><br/>
 <a href="<?php echo HOST_ADMIN ?>skills/list">Skills</a><br/>

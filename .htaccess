@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9_]+)/([0-9]+)$  index.php?site=$1&module=$2&action=$3&id=$4 [L]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9_]+)$  index.php?site=$1&module=$2&action=$3 [L]
