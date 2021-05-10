@@ -1,0 +1,56 @@
+* {
+    		margin: 0;
+    		padding: 0;
+    	}
+    	table{
+    		border: 1px solid black;
+    		margin: auto;
+    		border-collapse: collapse;
+    	}
+
+    	td {
+    		border: 1px solid black;
+    	}
+
+    	thead tr{
+    		background-color: #d3e3ff;
+    		text-align: center;
+    	}
+
+    	thead td{
+    		padding: 5px 3px;
+    	}
+
+    	td {
+    		padding: 5px;
+    	}
+
+    	nav, .main{
+    		margin: auto;
+    		width: 80%;
+    	}
+
+    	.restrictions {
+    		font-size: 90%;
+    		color: #494040;
+    		font-style: italic;
+    	}
+
+    	.cap {
+    		font-size: 105%;
+    		text-transform: uppercase;
+    	}
+
+    	.rank, .cost {
+    		width:5%;
+    		text-align: center;
+    	}
+
+    	.skill {
+    		width: 90%;
+    	}
+
+        .img_full {
+            width: 100%;
+            height: auto;
+        }

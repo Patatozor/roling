@@ -1,0 +1,138 @@
+@font-face {
+ font-family: "Enchanted Land";
+ src: url("../fonts/Enchanted_Land.otf") format("opentype");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	color: #2a3a3c;
+}
+
+ul li {
+	list-style-type: 'ꚛ';
+	margin-left: 15px;
+	padding-left: 3px;
+}
+
+ul{
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+p {
+	margin-bottom: 10px;
+	line-height: 1em;
+}
+
+body {
+	background-image: url("../images/grunge-vintage-old-paper-background.jpg");
+	font-family: "Enchanted Land", serif;
+	font-size: 2.5em;
+}
+
+h1 {
+	font-size: 170%;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+
+h2 {
+	font-size: 135%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+h2::first-letter, h1::first-letter{
+	color: #992600;
+	font-size: 110%;
+}
+
+h3 {
+	font-size: 120%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h1,h2,h3 {
+	font-weight: bold;
+}
+
+header {
+	width: 80%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: white;
+	margin-left: 10%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+
+table {
+	font-size: 100%;
+	border-collapse: collapse;
+}
+
+th, td{
+	text-align: center;
+}
+
+thead, tbody {
+	width: 100%;
+}
+
+a, h3 {
+	color: #992600;
+}
+
+.main {
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-top: 80px;
+	padding: 0% 2%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bloc {
+	padding: 5px;
+}
+
+.border-on td, .border-on th {
+	border: 1px solid black;
+}
+
+.border-on th {
+	font-weight: normal;
+	padding: 4px;
+}
+
+.table-title {
+	font-weight: bold;
+	font-size: 110%;
+	color: #992600;
+}
+
+.border {
+	border: solid 1px black;
+}
+
+.margin-bottom
+{
+	margin-bottom: 2em;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.img_full {
+	width: 100%;
+	height: auto;
+}
