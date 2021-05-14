@@ -7,13 +7,13 @@
 		<div class="align-center col-sm-2">
 			<ul>
 				<li><a href="caracteristiques">Des caractéristiques</a></li>
-				<li>Une race</li>
-				<li>Un profil aussi appelé classe de personnage</li>
-				<li>Un niveau</li>
+				<li><a href="peuples">Un peuple ou race</a></li>
+				<li><a href="classe">Un profil aussi appelé classe de personnage</a></li>
+				<li><a href="niveau">Un niveau</a></li>
 				<li>Un nom</li>
 				<li>Une description physique et une histoire</li>
-				<li>Des compétences</li>
-				<li>De l'équipement</li>
+				<li><a href="competences">Des compétences</a></li>
+				<li><a href="equipement">De l'équipement</a></li>
 			</ul>
 		</div>
 	</div>

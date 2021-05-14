@@ -19,8 +19,8 @@ class RulesController extends PublicController
         $this->_view->loadPage(self::VIEWDIR.'avantages.php');
     }
 
-    public function races(){
-        $this->_view->setTitle("Les races");
-        $this->_view->loadPage(self::VIEWDIR.'races.php');
+    public function peuples(){
+        $this->_view->setTitle("Les races et peuples");
+        $this->_view->loadPage(self::VIEWDIR.'peuples.php');
     }
 }
