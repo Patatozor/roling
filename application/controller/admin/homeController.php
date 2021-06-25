@@ -6,7 +6,7 @@
  * Date: 23/04/2016
  * Time: 18:50
  */
-class HomeController extends AdminController
+class homeController extends AdminController
 {
 		const VIEWDIR = self::BASEDIR.'home/';
 		

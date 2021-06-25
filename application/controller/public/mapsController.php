@@ -1,6 +1,6 @@
 <?php
 
-class MapsController extends PublicController
+class mapsController extends PublicController
 {
 		const VIEWDIR = self::BASEDIR.'maps/';
 		

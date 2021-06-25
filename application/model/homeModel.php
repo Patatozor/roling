@@ -1,6 +1,6 @@
 <?php
 
-class HomeModel extends CoreModel
+class homeModel extends CoreModel
 {
 	public function test()
 	{

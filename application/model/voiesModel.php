@@ -1,17 +1,6 @@
 <?php
-class Voie
-{
-	private $_id;
-	private $_label;
-	
-	public function __construct($id, $label)
-  {
-		$this->_id = $id;
-		$this->_label = $label;
-	}
-}
 
-class VoiesModel extends CoreModel
+class voiesModel extends CoreModel
 {
 	public function showAll()
 	{
@@ -36,6 +25,38 @@ class VoiesModel extends CoreModel
 			$insert -> bindValue(':description', $description, PDO::PARAM_STR);
 
 			$insert -> execute();
+			return true;
+		}
+		catch (CustomException $e)
+		{
+			return false;
+		}
+	}
+
+	public function update($id, $label,$article,$description)
+	{
+		try
+		{
+			$update = $this->_db -> prepare('UPDATE voies SET label = :label, article = :article, description = :description WHERE id = :id');
+			$update -> bindValue(':id', $id, PDO::PARAM_INT);
+			$update -> bindValue(':label', $label, PDO::PARAM_STR);
+			$update -> bindValue(':article', $article, PDO::PARAM_STR);
+			$update -> bindValue(':description', $description, PDO::PARAM_STR);
+			$update -> execute();
+			return true;
+		}
+		catch (CustomException $e)
+		{
+			return false;
+		}
+	}
+
+	public function delete($id)
+	{
+		try {
+			$delete = $this->_db -> prepare('DELETE FROM voies WHERE id = :id');
+			$delete -> bindValue(':id', $id, PDO::PARAM_INT);
+			$delete -> execute();
 			return true;
 		}
 		catch (CustomException $e)
@@ -78,13 +99,5 @@ class VoiesModel extends CoreModel
 		{
 			return false;
 		}
-	}
-	
-	public function update()
-	{
-	}
-	
-	public function delete()
-	{
 	}
 }

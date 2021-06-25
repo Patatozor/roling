@@ -11,9 +11,9 @@
 				Il y a 8 caractéristiques majeures (4 mentales et 4 physiques):
 				<ul>
 					<li><b>La Force (FOR)</b> mesure la puissance physique et musculaire du personnage, ainsi que son abilité générale en combat au contact.</li>
-					<li><b>L'Adresse (ADR)</b> mesure l'agilité, la dextérité et la précision du personnage.</li>
+					<li><b>L'Adresse (ADR)</b> mesure la dextérité, la minutie et la précision du personnage.</li>
 					<li><b>La Constitution (CON)</b> représente la santé et l'endurance du personnage.</li>
-					<li><b>La Vivacité (VIV)</b> représente les réflexes, la vitesse du personnage et son aptitude à esquiver les attaques.</li>
+					<li><b>L'Agilité (AGI)</b> représente les réflexes, la discrétion et l'agilité du personnage.</li>
 					<li><b>L'Intelligence (INT)</b> représente les capacités d'apprentissage et de raisonnement du personnage.</li>
 					<li><b>La Perception (PER)</b> représente les capacités du personnage à analyser son environnement et son intuition.</li>
 					<li><b>La Volonté (VOL)</b> Mesure la force mentale et de conviction du personnage, ainsi que sa sagesse.</li>
@@ -37,23 +37,23 @@
 				<th>Mod.</th>
 			</tr>
 			<tr>
-				<td>1-3</td>
+				<td>1-2</td>
 				<td>-4</td>
 			</tr>
 			<tr>
-				<td>4-5</td>
+				<td>3-4</td>
 				<td>-3</td>
 			</tr>
 			<tr>
-				<td>6-7</td>
+				<td>5-6</td>
 				<td>-2</td>
 			</tr>
 			<tr>
-				<td>8-9</td>
+				<td>7-8</td>
 				<td>-1</td>
 			</tr>
 			<tr>
-				<td>10-11</td>
+				<td>9-11</td>
 				<td>0</td>
 			</tr>
 			<tr>
@@ -65,15 +65,15 @@
 				<td>+2</td>
 			</tr>
 			<tr>
-				<td>16-18</td>
+				<td>16-17</td>
 				<td>+3</td>
 			</tr>
 			<tr>
-				<td>19-21</td>
+				<td>18-20</td>
 				<td>+4</td>
 			</tr>
 			<tr>
-				<td>22-24</td>
+				<td>21-23</td>
 				<td>+5</td>
 			</tr>
 			<tr>
@@ -99,21 +99,19 @@
 	<div class="row">
 		<h2>Les caractéristiques secondaires</h2>
 		<p>
-		Les caractéristiques secondaires découlent directement de vos caractéristiques principales et de vos choix de profil de personnage, de niveau et d'équipement, ce sont des nombres qui sont amenées à évoluer au cours des aventures que va vivre votre personnage.
-		Elles sont au nombre de 11: 
+		Les caractéristiques secondaires découlent directement de vos caractéristiques principales, compétences et équipements. Ce sont des nombres qui sont amenées à évoluer au cours des aventures que va vivre votre personnage.
+		Elles sont au nombre de 9: 
 		</p>
 		<ul>
-			<li><b>Les Points de vie (PV)</b> C'est une jauge qui mesure la capacité de votre personnage a encaisser la douleur avant de perdre conscience, elle est déterminée par <b>[valeur de CON multipliée par deux]</b>. </li>
-			<li><b>Les Points de destin (PD)</b> représente la capacité de votre héro à maîtriser son destin, chaque point utilisé permet de modifier la valeur d'un lancer effectué par votre héro de 1 point dans le sens souhaité. Il n'est pas possible de transformer une simple réussite en réussite critique cependant. Un personnage commence avec <b>[valeur de VOL - 5]</b> points de destin.</li>
-			<li><b>Les Emplacements de sorts (EP)</b> représentent les réserves magiques de votre personnage pour lancer des <a href="sorts">sortilèges</a>. Le personnage commence avec <b>[Mod de VOL + Mod d'INT + nombre dépendant du profil/classe joué] emplacements de rang 1.</b></li>
-			<li><b>Les Points d'apprentissage (PA)</b> représente l'expérience acquise dans l'apprentissage de nouvelles <a href="competences">compétences</a>. Vous pouvez donc les utiliser pour apprendre de nouvelles compétences en payant le coût d'apprentissage. Un personnage commence avec <b>[valeur d'INT divisé par deux]</b> PA (arrondi à la valeur inférieure)</li>
-			<li><b id="PI">Les Points d'inspiration (PI)</b> représente la capacité de votre héro à influencer sur la réussite de ses compagnons, vous pouvez utiliser un PI pour confèrer un <a href="avantages">avantage</a> sur un test à un compagnon, le PI utilisé doit être annoncé avant que le lancer des dés ait été effectué. Un personnage commence avec <b>[Mod de CHA PI]</b>.</li>
-			<li><b>La Défense (DEF)</b> mesure la difficulté qu'auront les adversaires à vous toucher avec des attaques physiques. Pour la calculer, on additionne <b>[Mod de VIV + bonus de défense des équipement + bonus des compétences +10]</b>.</li>
-			<li><b>L'Initiative (INIT)</b> représente votre capacité à agir en premier, elle est déterminée par votre <b>[Mod de VIV + bonus d'équipement + bonus de compétences]</b>. Elle est utilisée au début de chaque tour de combat pour déterminer l'ordre des actions des personnages et créatures. Lors d'un test d'initiative, on additionne cette valeur à un lancer de D20. </li>
-			<li><b>L'Encombrement maximal (EM)</b> représente votre capacité à porter sur soi même un certain nombre d'équipement, il est possible d'augmenter cette valeur via des compétences et <a href="equipement">équipements</a> tels que des sacs. Sa valeur est déterminée par votre [valeur de FOR].</li>
-			<li><b>L'Attaque au contact (AC)</b> représente votre score de toucher au contact, elle est déterminée par <b>[Mod de FOR + bonus d'équipement + bonus de compétences]</b>. Lors d'un test d'attaque au contact, on additionne cette valeur à un lancer de D20.</li>
-			<li><b>L'Attaque à distance (AD)</b> représente votre score de toucher avec des armes de lancer ou de tir, elle est déterminée par <b>[Mod d'ADR +  bonus d'équipement + bonus de compétences]</b>. Lors d'un test d'attaque à distance, on additionne cette valeur à un lancer de D20.</li>
-			<li><b>L'Attaque magique (AM)</b> représente votre score de toucher avec les sorts que vous utilisez, elle est déterminée par <b>[Mod d'INT/CHA/VOL + bonus d'équipement + bonus de compétences]</b>. Le modificateur a utiliser dépend du sortilège lancé. Lors d'un test d'attaque magique, on additionne cette valeur à un lancer de D20.</li>
+			<li><b>Les Points de vie (PV)</b> C'est une jauge qui mesure la capacité de votre personnage a encaisser la douleur avant de perdre conscience, sa valeur maximale et initiale est déterminée par <b>[valeur de CON multipliée par deux]</b>.</li>
+			<li><b>La Points de sanité (PS)</b> représentent la santé mentale de votre personnage. Elle sera parfois mise à rude épreuve par les évènements qui arriveront tout au long de l'aventure. Le personnage commence avec <b>[valeur de VOL multipliée par deux] PS.</b></li>
+			<li><b>Les Points d'apprentissage (PA)</b> représente l'expérience acquise dans l'apprentissage de nouvelles <a href="competences">compétences</a>. Vous pouvez donc les utiliser pour progresser dans une voie de compétences en payant le coût d'apprentissage. Un personnage commence avec <b>[valeur d'INT divisé par deux]</b> PA (arrondi à la valeur inférieure)</li>
+			<li><b id="PI">Les Points d'inspiration (PI)</b> représente la capacité de votre personnage à influer sur la réussite de ses compagnons, vous pouvez utiliser un PI pour confèrer un <a href="avantages">avantage</a> sur un <a href="tests">test</a> à un compagnon, le PI utilisé doit être annoncé avant que le lancer des dés ait été effectué. Un personnage commence avec <b>[Mod de CHA PI]</b>.</li>
+			<li><b>La Défense (DEF)</b> mesure la difficulté qu'auront les adversaires à vous toucher avec leurs attaques. Les adversaires doivent faire un score d'attaque supérieur à cette valeur pour espérer vous infliger des dégâts. Pour la calculer, on additionne <b>[Mod d'AGI + 10]</b>.</li>
+			<li><b>L'Encombrement maximal (EM)</b> représente votre capacité à porter sur soi même un certain nombre d'équipement, il est possible d'augmenter cette valeur via des compétences et <a href="equipement">équipements</a> tels que des sacs. Sa valeur est déterminée par votre [valeur de FOR x 2].</li>
+			<li><b>L'Attaque au contact (AC)</b> représente votre score de toucher au contact, elle est déterminée par <b>[Mod de FOR]</b>. Lors d'un test d'attaque au contact, on additionne cette valeur à un lancer de D20.</li>
+			<li><b>L'Attaque à distance (AD)</b> représente votre score de toucher avec des armes de lancer ou de tir, elle est déterminée par <b>[Mod d'ADR]</b>. Lors d'un test d'attaque à distance, on additionne cette valeur à un lancer de D20.</li>
+			<li><b>L'Attaque magique (AM)</b> représente votre score de toucher avec les sorts que vous utilisez, elle est déterminée par <b>[Mod d'INT/CHA/VOL/PER]</b>. Le modificateur a utiliser dépend de la voie de compétence à laquelle appartient le sort. Lors d'un test d'attaque magique, on additionne cette valeur à un lancer de D20.</li>
 		</ul>
 	</div>
 </div>

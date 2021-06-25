@@ -13,7 +13,7 @@ else
 
 include_once 'application/controller/'.$site.'/'.$module.'Controller.php';
 $model_file = 'application/model/'.$module.'Model.php';
-$controller = ucfirst($module).'Controller';
+$controller = $module.'Controller';
 
 
 

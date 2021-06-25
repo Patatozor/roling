@@ -12,6 +12,7 @@
     	<ul>
         	<li><a href="<?php echo HOST ?>">Home</a></li>
         	<li><a href="<?php echo HOST_PUBLIC.'maps/royaume_amestris'; ?>">Carte d'Amestris</a></li>
+            <li><a href="<?php echo HOST_PUBLIC.'rules/type_degats'; ?>">Les types de dégâts et résistances</a></li>
     	</ul>
 	</nav>
 </header>

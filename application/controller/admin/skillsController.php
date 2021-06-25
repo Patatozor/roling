@@ -1,6 +1,6 @@
 <?php
 
-class SkillsController extends AdminController
+class skillsController extends AdminController
 {
 	const VIEWDIR = self::BASEDIR.'skills/';
 

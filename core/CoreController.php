@@ -30,17 +30,34 @@ class CoreController extends Core
             {
                 $action = self::DEFAULT_ACTION;
             }
+            $id = isset($_GET['id']) ? $_GET['id'] : 0;
             if(method_exists($this, $action))
             {
-			    try
+                if ($id)
                 {
-                    $this->$action();
-				}
-                catch (CustomException $e)
+                    try
+                    {
+                        $this->$action($id);
+                    }
+                    catch (CustomException $e)
+                    {
+                        $this->_view->setTitle("Cette page n'existe pas");
+                        $this->_view->loadPage("missing_page.php",null,TEMPLATES_DIR.'default/');
+                    }
+                }
+                else
                 {
-					$this->_view->setTitle("Cette page n'existe pas");
-                    $this->_view->loadPage("missing_page.php",null,TEMPLATES_DIR.'default/');
-				}
+                    try
+                    {
+                        $this->$action();
+                    }
+                    catch (CustomException $e)
+                    {
+                        $this->_view->setTitle("Cette page n'existe pas");
+                        $this->_view->loadPage("missing_page.php",null,TEMPLATES_DIR.'default/');
+                    }
+                }
+			    
             }
             else
             {

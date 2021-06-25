@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends PublicController
+class homeController extends PublicController
 {
 		const VIEWDIR = self::BASEDIR.'home/';
 		

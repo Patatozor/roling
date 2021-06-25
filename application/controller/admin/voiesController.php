@@ -1,5 +1,5 @@
 <?php 
-class VoiesController extends AdminController
+class voiesController extends AdminController
 {
 		const VIEWDIR = self::BASEDIR.'voies/';
 		
@@ -30,24 +30,29 @@ class VoiesController extends AdminController
     		$this->_view->loadPage(self::VIEWDIR.'edit.php',$voie);
 		}
 		
-		public function save()
+		public function save($id = 0)
 		{
-			if (isset($_POST['id']) && $_POST['id'] > 0)
+			$update = 0;
+			$insert = 0;
+
+			if ($id > 0)
 			{
+				$update = $this->_model->update($id, $_POST['label'], $_POST['article'], $_POST['description']);
+				$location = "../list";
 			}
 			else
 			{
-				print_r($_POST);
 				$insert = $this->_model->insert($_POST['label'], $_POST['article'], $_POST['description']);
-				if ($insert === true)
-				{
-					header("Location: list");
-				}
-				else
-				{
-					$this->_view->setTitle('Erreur nouvelle voie');
-					$this->_view->loadPage(self::VIEWDIR.'add.php',$e);
-				}
+				$location = "list";
+			}
+			if ($update > 0 || $insert > 0)
+			{
+				header("Location: ".$location);
+			}
+			else
+			{
+				$this->_view->setTitle('Erreur mise à jour de la voie en base');
+				$this->_view->loadPage(self::VIEWDIR.'add.php',$e);
 			}
 		}
 

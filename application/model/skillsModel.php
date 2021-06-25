@@ -1,6 +1,6 @@
 <?php
 
-class SkillsModel extends CoreModel
+class skillsModel extends CoreModel
 {
 	public function getAllVoies()
 	{

@@ -1,97 +1,68 @@
-<h1>Les races jouables</h1>
+<h1>Les races</h1>
 
 <div class="bloc">
 	<div class="row margin-bottom">
 		<p>
-			Les personnages que vous incarnez appartiennent à un peuple et par extension à une espèce d'humanoïde intelligente parmi plusieurs qui peuplent le monde de Natria.
-			Ce peuple leur confèrent quelques particularité physiques ainsi que culturelles. Cela se matérialise par des bonus ou malus au niveau des caractéristiques qui reflètent ces différences par rapport à un humain lambda.</p>
+			En déambulant à travers Amestris, on entend parmi le brouhaha général de multiples langues; Le fumet d'une multitude de cuisines culturelles se mêlent aux odeurs parfois peu agréables des rues bondées et insalubres. Des bâtiments de diverses tailles, couleurs, architectures et matériaux se côtoient et indiquent les origines variées des habitants. Et les gens eux-mêmes – des personnes de tailles, de formes et de couleurs différentes, habillées dans divers styles bariolés – représentent différentes races, des petits halfelins et robustes nains aux elfes sveltes et majestueux se mélangeant avec de nombreuses ethnies humaines.
+		</p>
+		<p>
+			Éparpillés parmi la foule, on peut apercevoir des personnes de toutes origines : un puissant Orc ici, traçant son chemin dans la foule ; là, un saurien en robe de cérémonie, venu se fournir en marchandises et bibelots étincelants, qu'il pourra offrir en offrande à ses dieux dragons. Un groupe de gnomes et d'halfelins organise un concours de farces et rient aux éclats, alors qu'au même moment une bagarre éclate dans la taverne à proximité; un nain vient de se prendre une torgnole d'un pirate Demi-orque ivre, sous le regard amusé d'un Demi-elfe travaillant dans l'établissement. Et par ici, à l'écart de la foule, se dresse un elfe sylvestre, déboussolé par la foule abondante bien différente des quelque animaux qu'il à l'habitude de cotoyer dans ses forêts; ce dernier devrait faire attention, car une bande de fripouilles composée d'humaines, l'a repéré et s'apprêtent à le détrousser !
 		<h2>Les différentes races jouables:</h2>
 		<ul>
-			<li><b><a href="#elfes">Les Elfes</a></b></li>
-			<li><b><a href="#humains">Les Humains</a></b></li>
-			<li><b><a href="#halflin">Les Halfin</a></b></li>
-			<li><b><a href="#orcs">Les Orcs</a></b></li>
-			<li><b><a href="#sauriens">Les Sauriens</a></b></li>
+			<li><b><a href="peuple/elfes">Les Elfes</a></b></li>
+			<li><b><a href="peuple/gnomes">Les Gnomes</a></b></li>
+			<li><b><a href="peuple/halfelin">Les Halfelin</a></b></li>
+			<li><b><a href="peuple/humains">Les Humains</a></b></li>
+			<li><b><a href="peuple/nains">Les Nains</a></b></li>
+			<li><b><a href="peuple/orcs">Les Orcs</a></b></li>
+			<li><b><a href="peuple/sauriens">Les Sauriens</a></b></li>
 		</ul>
 	</div>
 	<div class="row">
-		<h3 id="elfes">Les elfes</h2>
+		<h2>Choisir une race</h2>
 		<p>
-			Les elfes sont des êtres féériques qui ont toujours eu un attrait certain pour la nature, les arts et la magie. Les elfes sont orgueilleux, parfois arrogants et préfèrent vivre à l'écart des autres peuples.
+			De nombreuses races d'humanoïdes intelligents plus fantastiques les unes que les autres peuplent les terres et océans du monde de Natria.
+			Votre personnage appartient à une de ces races. Pour autant, toutes les races intelligentes de Natria ne sont pas appropriées pour être incarnées par un joueur, du fait d'un manque de compétences sociales, d'une certaines aversion à l'aventure, ou encore d'un penchant trop élevé pour les crimes et actes maléfiques. Les elfes, les humains,les halfelins et les nains sont les races les plus communes, étant présentes sur l'ensemble des continents. Les autres races et sous-races y sont aussi présentes mais sont en général moins bien accueillies, car moins bien connues et sont plus rares dans les groupes d'aventuriers.
 		</p>
+		<h2>Races communes</h2>
+		<p>Peuplant la plupart des régions du monde et ayant un certain goût pour les voyages ou le commerce, ces races sont les plus communes et presque tout le monde a déjà ne serait-ce qu'apperçu un individu faisant partie de ces peuples, les humains, nains, elfes et halfelins sont les races les plus représentées dans le monde de Natria, et par conséquent parmi les groupes d'aventuriers qui sillonne le monde.</p>
+		<h3>Humain</h3>
 		<p>
-			Physiquement les elfes ont une stature élancée et fine, qui varie cependant selon le peuple dont on parle.
-			Parmi les autres caractéristiques remarquables de leur anatomie, on pourra citer leurs oreilles longues et pointues et des yeux brillants.
-			Taille moyenne: 1m80, 70kg pour le sexe masculin et 1m70, 50kg pour le sexe féminin.
+			Les humains sont les personnages les plus fréquents dans le monde de Natria, population principale de l'empire d'Amestris. Tout aussi facilement qu'ils se mélangent entre ethnies, les humaines se mélangent sans trop de problèmes aux autres races. Cela n'empêche certains de penser les humains arriviste, étant l'une des races communes les plus jeunes, et ayant en quelque siècles envahi presque toutes les régions du monde.
 		</p>
+		<h3>Elfes</h3>
 		<p>
-			Il existe principalement 3 peuplades elfes: <br/>
-			-<a href="peuple/1">les hauts elfes</a>,<br/>
-			-<a href="peuple/2">les elfes sylvains</a>,<br/>
-			-<a href="peuple/3">les demi-elfes</a>.
+			Orgueilleux de leur civilisation qui perdure depuis l'aube des temps, les elfes ont tendance à faire preuve d'arrogance, ce qui leur vaut souvent des moqueries de la part des autres peuples. Les nombreuses légendes d'exploits de guerre des elfes, de leur maîtrise de la magie, et les quelques oeuvres d'art que sont leurs cités, leur donnent une réputation de peuple puissant et raffiné. 
 		</p>
-	</div>
-	<div class="row">
-		<h3 id="humains">Les humains</h2>
+		<h3>Halfelin</h3>
 		<p>
-			Les humains sont ce à quoi on pourrait s'attendre. Leurs modes de vie sont somme toutes très divers, mais on notera chez l'humain une proportion à chercher à étendre son territoire et répandre sa culture. Les humains sont polyvalents et sont la race d'humanoïde "intelligent" que l'on retrouve le plus dans le monde de Natria.
+			Lointains cousins des nains et gnomes, les halfelins partagent avec eux une certaine bonhommie, ce qui leur attire rapidement l'amitié de tous, particulièrement quand la fête bât son plein. Cependant, peu de gens les prennent au sérieux, car à l'inverse de leurs cousins nains et gnomes, les halfelins ne sont pas particulièrement reconnus pour avoir une histoire particulièrement glorieuse en politique ou en exploits militaires; c'est plutôt leur réputation de chapardeur qui est retenue et les gens ordinaires auront tendance à garder un oeil sur eux lorsqu'un halfelin leur traîne au peu trop dans les jambes.
 		</p>
+		<h3>Nains</h3>
 		<p>
-			Physiquement, l'humain ressemble à ce qu'on retrouve dans le monde réel, et selon son peuple, il peut avoir de nombreuses caractéristiques qui diffèrent, telles que la couleur de peau, la taille moyenne, la corpulence etc.
-			Taille moyenne: 1m75, 80kg pour l'homme et 1m65, 60kg pour la femme.
+			Fiers et solides personnages, les nains sont des artisans respectés, tout le monde sait que leurs cités qui s'étendent sous les monts et collines du monde sont de réelles chefs d'oeuvre. De plus, voir un nain venir commercer avec les autres peuples n'est pas une chose inhabituelle, les nains sont réputés avoir un certain attrait pour l'or, et la majorité des gens ordinaires les voient comme des personnes un peu avares.
 		</p>
+		<h2>Races non communes</h3>
 		<p>
-			Il existe principalement 4 peuplades humaines: <br/>
-			-<a href="peuple/4">les Alasiens</a>,<br/>
-			-<a href="peuple/5">les Estriens</a>,<br/>
-			-<a href="peuple/6">les Norses</a>,<br/>
-			-<a href="peuple/7">les Zenyans</a>.
+			Certaines races et ethnies sont plus rares, selon la région où l'on se situe, ou moins prédisposés à cotoyer les autres peuples et donc à choisir la vie d'aventurier. Elles ne sont pas présentes dans toutes les régions du monde et même lorsqu'elles y existent, elles sont en général moins répandues que les nains, les elfes et les humains qui dominent globalement les territoires civilisés.</p>
+		<p>
+			Dans les grandes villes cosmopolites de Natria, la plupart des gens ne seront pas surpris de rencontrer des membres des races les plus exotiques. Mais dans les petites villes et les villages qui parsèment la campagne les choses sont différentes. Les gens ordinaires ne sont pas habitués à voir des membres de ces races, du moins, pas de façon pacifique, et réagissent en conséquence.
 		</p>
-	</div>
-	<div class="row">
-		<h3 id="halflin">Les Halfin</h2>
+		<h3>Demi-elfe</h3>
 		<p>
-			Les Halfin aussi appelés semi-homme sont un groupement de peuples très proches les uns des autres tout en étant assez divers. Habitant principalement des souterrains, ce sont de bons vivants, très accueillants, avec un fort attrait pour les richesses. Les petits hommes ont la réputation d'être de très fins artisans.
+			Souvent confondus avec les elfes, car au final assez rares, la plupart des gens savent qu'ils existent mais peu sont capable de dire s'ils en ont déjà vu. L'arrivée d'un demi-elfe identifié comme tel est généralement suivie de commérages dans son dos et de regards volés dans la salle commune, plutôt que de confrontations ou de curiosités ouvertes.
 		</p>
+		<h3>Gnome</h3>
 		<p>
-			Physiquement, le semi-homme se reconnait très facilement par une petite taille, ne dépassant jamais les 1m50, une pilosité développée et une tendance à avoir de l'embonpoint.
-			Taille moyenne: 1m30, 75kg pour le sexe masculin et 1m30, 65kg pour le sexe féminin.
+			Petits, toujours occupés dans des projets divers et variés, les gnomes n'ont pas la réputation d'être une menace et désarment rapidement les soupçons grâce à leur bonne humeur. Ils attisent souvent la curiosité des gens ordinaire et ne reçoivent que très rarement d'hostilité à leur égard.
 		</p>
+		<h3>Orc et demi-orc</h3>
 		<p>
-			Il existe principalement 3 peuplades correspondant à l'appellation de halflin: <br/>
-			-<a href="peuple/8">les Gnomes</a>,<br/>
-			-<a href="peuple/9">les Hobbits</a>,<br/>
-			-<a href="peuple/10">les Nains</a>.
+			Les gens ordinaires ne font aucune différence entre un orc et un demi-orc. Dans l'esprit collectif, ce sont des sauvages brutaux et il est généralement prudent de supposer qu'un orc est belliqueux et prompt à la colère. C'est pourquoi les gens évitent de croiser la route d'un orc inconnu, afin de s'éviter des ennuis. Les commerçants pourraient subrepticement cacher des biens de valeur ou des objets fragiles quand un orc ou demi-orc entre, et les gens sortiront discrètement d'une taverne, anticipant qu'une bagarre éclatera bientôt.
 		</p>
-	</div>
-	<div class="row">
-		<h3 id="orcs">Les Orcs</h2>
+		<h3>Saurien</h3>
 		<p>
-			Les Orcs sont des êtres jugés brutaux et cruels par la plupart des autres peuples, mais c'est une déformation de la vérité, en effet, chez l'orc l'honneur et la force sont des valeurs primordiales, ce qui en fait un peuple de guerriers formidables. Les orcs vivent en groupement de tribus et clans et s'épanouissent sur les champs de bataille.
-		</p>
-		<p>
-			Les Orcs ont la peau variant entre le vert, le gris et les ocres, massifs, grands et à la musculature surdéveloppée. Autre caractéristique très reconnaissable des orcs sont leurs défenses à la machoires, semblable à celles des sangliers.
-			Taille moyenne: 2m, 110kg pour le sexe masculin et 1m85, 90kg pour le sexe féminin.
-		</p>
-		<p>
-			Il existe principalement 2 peuplades Orques: <br/>
-			-<a href="peuple/11">les Orcs continentaux</a>,<br/>
-			-<a href="peuple/12">les Orcs insulaires</a>.
-		</p>
-	</div>
-	<div class="row">
-		<h3 id="sauriens">Les Sauriens</h2>
-		<p>
-			Les Sauriens sont des êtres assez mystérieux. Les légendes racontent qu'ils sont la progéniture d'un dragon ancestral. Cela coïncide d'ailleurs avec le fait que ces derniers considèrent les dragons comme des dieux, les sauriens sont d'ailleurs très zêlés dans ces croyances et n'hésite pas à offrir de nombreuses offrandes aux dragons. Les sauriens sont un peuple de grand architectes, n'ayant aucun remord à recourir à l'esclavagisme pour accomplir les requêtes extravagantes des dragons qui profitent de leurs services. 
-		</p>
-		<p>
-			Les Sauriens ont une apparence reptilienne, des dents carnassières, des griffes aux mains et aux pieds, des écailles qui couvrent tout le corps, le sang froid, ils supportent mal le froid.
-			Taille moyenne: 1m60, 65kg pour le sexe masculin et 1m80, 75kg pour le sexe féminin.
-		</p>
-		<p>
-			Il existe principalement 2 peuplades Sauriennes: <br/>
-			-<a href="peuple/13">les Kheosides</a>,<br/>
-			-<a href="peuple/14">les Drakonides</a>.
+			Il est facile de supposer qu'un saurien est un monstre, surtout lorsqu'on sait qu'ils sont les protégés de dragons, et qu'ils partagent avec eux certaines caractéristiques physiques: écailles, dents acérées, griffes tranchantes... Tout ça ne rassure par le quidam lambda. Mais à moins que le saurien ne commence à hausser le ton et ne provoque des destructions, les gens sont plutôt susceptibles de réagir avec prudence qu'avec de la peur pure et simple.
 		</p>
 	</div>
 </div>
