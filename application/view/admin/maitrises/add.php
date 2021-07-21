@@ -3,7 +3,7 @@
 <form action="<?php echo HOST ?>admin/maitrises/save" method="POST">
 	<div>
 		<input name="label" id="label" type="text" placeholder="Nom" /><br/>
-		<textarea name="description" id="description">Description de la maitrise</textarea>
+		<textarea name="description" id="description" placeholder="Description de la maitrise"></textarea>
 	</div>
 	<input type="submit" value="Enregistrer" />
 </form>
