@@ -5,12 +5,12 @@ class skillsController extends AdminController
 	const VIEWDIR = self::BASEDIR.'skills/';
 
     public function list(){
-        $this->_view->setTitle('Liste des sorts');
+        $this->_view->setTitle('Liste des compétences');
         $this->_view->loadPage('admin/skills/list.php');
     }
 
     public function add(){
-    	$this->_view->setTitle('Ajouter un nouveau sort');
+    	$this->_view->setTitle('Ajouter une nouvelle compétence');
     	$data = [];
     	$data['voies'] = $this->_model->getAllVoies();
     	$this->_view->loadPage(self::VIEWDIR.'add.php', $data);

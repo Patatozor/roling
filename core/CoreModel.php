@@ -19,7 +19,7 @@ class CoreModel extends Core
 							PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 			$this->_db = new PDO($this->_dns, DBLOGIN, DBPW, $option);
 		}
-		catch(Exception $e)
+		catch(PDOException $e)
 		{
 			die($e -> getMessage());
 		}
