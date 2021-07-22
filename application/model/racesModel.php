@@ -1,6 +1,6 @@
 <?php
 
-class spellsModel extends CoreModel
+class racesModel extends CoreModel
 {
 	const TABLE = "races";
 	
