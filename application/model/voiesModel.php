@@ -2,7 +2,7 @@
 
 class voiesModel extends CoreModel
 {
-	const TABLE = "voies";
+	public $_table = "voies";
 	
 	public function insert($label,$article,$description)
 	{

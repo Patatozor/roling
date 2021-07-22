@@ -2,7 +2,7 @@
 
 class racesModel extends CoreModel
 {
-	const TABLE = "races";
+	public $_table = "races";
 	
 	public function insert($label,$description, $features, $str, $adr, $end, $agi, $intel, $per, $vol, $soc)
 	{

@@ -6,8 +6,8 @@ class racesController extends AdminController
 
     public function list(){
         $this->_view->setTitle('Liste des races');
-    	$data = $this->_model->getAll();
-        $this->_view->loadPage('admin/spells/list.php', $data);
+    	$data = $this->_model->showAll();
+        $this->_view->loadPage('admin/races/list.php', $data);
     }
 
     public function add(){

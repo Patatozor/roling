@@ -1,6 +1,5 @@
-<h1>Liste des sorts</h1>
-<a href="add">Ajouter un sort</a>
-<a href="../races/list">Liste des voies</a>
+<h1>Liste des races</h1>
+<a href="add">Ajouter une race</a>
 
 <table>
 	<tr>

@@ -2,7 +2,7 @@
 
 class spellsModel extends CoreModel
 {
-	const TABLE = "spells";
+	public $_table = "spells";
 	
 	public function insert($label,$description, $cost, $range, $difficulty)
 	{

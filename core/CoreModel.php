@@ -9,7 +9,7 @@
 class CoreModel extends Core
 {
     protected $_db;
-    const TABLE = "core";
+    public $_table = "core";
 		
 	public function __construct()
     {
@@ -29,7 +29,7 @@ class CoreModel extends Core
 	public function delete($id)
 	{
 		try {
-			$delete = $this->_db->prepare('DELETE FROM '.self::TABLE.' WHERE id = :id');
+			$delete = $this->_db->prepare('DELETE FROM '.$this->_table.' WHERE id = :id');
 			$delete->bindValue(':id', $id, PDO::PARAM_INT);
 			$delete->execute();
 			return true;
@@ -42,7 +42,7 @@ class CoreModel extends Core
 	
 	public function show($id)
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.self::TABLE.' WHERE id=:id');
+		$select = $this->_db->prepare('SELECT * FROM '.$this->_table.' WHERE id=:id');
 		$select->bindParam(':id', $id, PDO::PARAM_INT);
 		$select -> execute();
 		return $select -> fetch();
@@ -50,7 +50,7 @@ class CoreModel extends Core
 
 	public function showAll()
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.self::TABLE);
+		$select = $this->_db->prepare('SELECT * FROM '.$this->_table);
 		$select -> execute();
 		return $select -> fetchAll();
 	}

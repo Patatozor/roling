@@ -2,18 +2,13 @@
 
 class skillsModel extends CoreModel
 {
-	const TABLE = "skills";
+	public $_table = "skills";
 
 	public function getAllVoies()
 	{
 		$select = $this->_db->prepare('SELECT * FROM voies ORDER BY label ASC;');
 		$select -> execute();
 		return $select -> fetchAll();
-	}
-	
-	public function show($id)
-	{
-		return $this->readOneFromTable('voies',$id);
 	}
 	
 	public function insert($label,$description, $cost, $number_of_use, $type)
@@ -57,10 +52,6 @@ class skillsModel extends CoreModel
 	}
 	
 	public function update()
-	{
-	}
-	
-	public function delete()
 	{
 	}
 }

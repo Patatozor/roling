@@ -2,7 +2,7 @@
 
 class maitrisesModel extends CoreModel
 {
-	const TABLE = "maitrises";
+	public $_table = "maitrises";
 
 	public function showAll()
 	{
