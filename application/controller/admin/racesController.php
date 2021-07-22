@@ -26,7 +26,7 @@ class racesController extends AdminController
     {
     	if ($id > 0)
 		{
-			$update = $this->_model->update($id, $_POST['label'], $_POST['description'], $_POST['cost'], $_POST['range'], $_POST['difficulty']);
+			$update = $this->_model->update($id, $_POST['label'], $_POST['description'], $_POST['features'], $_POST['str'], $_POST['adr'], $_POST['end'], $_POST['agi'], $_POST['intel'], $_POST['per'], $_POST['vol'], $_POST['soc']);
 			if ($update > 0)
 			{
 				header("Location: ../edit/".$id);	
@@ -39,7 +39,7 @@ class racesController extends AdminController
 		}
 		else
 		{
-			$insert = $this->_model->insert($_POST['label'], $_POST['description'], $_POST['cost'], $_POST['range'], $_POST['difficulty']);
+			$insert = $this->_model->insert($_POST['label'], $_POST['description'], $_POST['features'], $_POST['str'], $_POST['adr'], $_POST['end'], $_POST['agi'], $_POST['intel'], $_POST['per'], $_POST['vol'], $_POST['soc']);
 			if ($insert > 0)
 			{
 				header("Location: list");	

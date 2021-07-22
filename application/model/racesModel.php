@@ -8,7 +8,7 @@ class racesModel extends CoreModel
 	{
 		try 
 		{
-			$insert = $this->_db -> prepare('INSERT INTO spells (label, description, features, str, adr, end, agi, intel, per, vol, soc) 
+			$insert = $this->_db -> prepare('INSERT INTO '.$this->_table.' (label, description, anatomy, str, adr, end, agi, intel, per, vol, soc) 
 				VALUES (:label, :description, :features, :str, :adr, :end, :agi, :intel, :per, :vol, :soc)');
 
 			$insert -> bindValue(':label', $label, PDO::PARAM_STR);
@@ -35,8 +35,8 @@ class racesModel extends CoreModel
 	{
 		try
 		{
-			$update = $this->_db -> prepare('UPDATE spells 
-				SET label = :label, description = :description, features = :features, 
+			$update = $this->_db -> prepare('UPDATE '.$this->_table.' 
+				SET label = :label, description = :description, anatomy = :features, 
 					str = :str, adr = :adr, end = :end, agi = :agi,
 					intel = :intel, per = :per, vol = :vol, soc = :soc,
 				WHERE id = :id');

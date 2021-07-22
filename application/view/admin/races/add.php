@@ -1,10 +1,10 @@
-<h1>Nouveau sort</h1>
+<h1>Nouvelle race</h1>
 
 <form action="<?php echo HOST ?>admin/races/save" method="POST">
 	<div>
 		<input name="label" id="label" type="text" placeholder="Nom" /><br/>
-		<textarea name="description" id="description" placeholder="Description de la race"></textarea>
-		<textarea name="features" id="features" placeholder="Caractéristiques physique de la race"></textarea>
+		<textarea name="description" id="description" placeholder="Description de la race"></textarea><br />
+		<textarea name="features" id="features" placeholder="Caractéristiques physique de la race"></textarea><br />
 		<input name="str" id="str" type="number" placeholder="Force" /><br/>
 		<input name="adr" id="adr" type="number" placeholder="Adresse" /><br/>
 		<input name="end" id="end" type="number" placeholder="Endurance" /><br/>
