@@ -50,7 +50,7 @@ class CoreModel extends Core
 
 	public function showAll()
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.$this->_table);
+		$select = $this->_db->prepare('SELECT * FROM '.$this->_table.' ORDER BY label asc');
 		$select -> execute();
 		return $select -> fetchAll();
 	}

@@ -12,7 +12,7 @@
 				<ul>
 					<li><b>La Force (FOR)</b> mesure la puissance physique et musculaire du personnage, ainsi que son abilité générale en combat au contact.</li>
 					<li><b>L'Adresse (ADR)</b> mesure la dextérité, la minutie et la précision du personnage.</li>
-					<li><b>La Constitution (CON)</b> représente la santé et l'endurance du personnage.</li>
+					<li><b>L'Endurance (END)</b> représente la santé et l'endurance du personnage.</li>
 					<li><b>L'Agilité (AGI)</b> représente les réflexes, la discrétion et l'agilité du personnage.</li>
 					<li><b>L'Intelligence (INT)</b> représente les capacités d'apprentissage et de raisonnement du personnage.</li>
 					<li><b>La Perception (PER)</b> représente les capacités du personnage à analyser son environnement et son intuition.</li>
@@ -20,7 +20,7 @@
 					<li><b>Le Charisme (CHA)</b> représente la force de persuasion, le charme et la capacité à diriger les autres, du personnages.</li>
 				</ul>
 				Les valeurs de ces caractéristiques est comprise entre 1 et 25 pour votre personnage, sachant que la moyenne "humaine" se situe autour de 10 (Hercule le demi-dieu Grec aurait une Force de 25 et un enfant malade de 6 mois une Constitution de 2 pour donner un ordre d'idée des échelles).
-				La valeur maximum pouvant être atteinte sans bonus est de 18, et représente déjà une aptitude exceptionnelle, de même la valeur minimum pouvant être atteinte sans malus est de 3.<br/>
+				La valeur maximum pouvant être atteinte sans bonus est de 20, et représente déjà une aptitude exceptionnelle, de même la valeur minimum pouvant être atteinte sans malus est de 4.<br/>
 			</p>
 			<p>
 				Lors d'un <a href="tests">test</a>, on n'utilise jamais la valeur de la caractéristique, mais le modificateur (Mod.) correspondant, comme indiqué sur le tableau de correspondance ci-dessous:
@@ -85,14 +85,68 @@
 		<div class="col col-sm-7">
 			<h3>Déterminer les valeurs</h3>
 			<p>
-				Pour déterminer les valeurs des caractéristiques de ton personnage, lance 4d6 et fait la somme des trois meilleurs résultats obtenus (si tu obtiens 2, 4, 6 et 3, la valeur sera de 4+6+3 = 13).
+				Pour déterminer les valeurs des caractéristiques de ton personnage, lance 2d6 et additionne les valeurs pour obtenir un score compris entre 2 et 12. Répète l'opération jusqu'à obtenir 8 valeurs.
 			</p>
 			<p>
-				Répète l'opération jusqu'à obtenir 8 valeurs et répartis les ensuite comme bon te semble entre les huit caractéristiques. Reporte les Mod. qui correspondent aux caractéristiques obtenues dans la case Mod. de ta fiche de personnage (pour la caractéristique de 13 obtenue dans l'exemple, le Mod. est +1).
+				Répartis ensuite les valeurs comme bon te semble entre les 8 caractéristique, il te suffit d'additionner ces valeurs aux points de base défini au niveau de la race que tu auras choisi. Une fois la valeur définitive de tes 8 caractéristiques obtenue, reporte les Mod. qui correspondent dans la case Mod. de ta fiche de personnage en t'aidant du tableau de correspondance "Valeurs et modificateurs de caractéristiques".
 			</p>
 			<p>
-				<b>Optionnel:</b> Si vous n'aimez pas l'aléatoire, vous pouvez aussi choisir d'attribuer directement 87 points que vous répartissez comme bon vous semble entre les 8 caractéristiques principales.<br>
-				Par exemple, je choisis de mettre 17 en FOR (+3), 12 en ADR (+1), 10 en CON (0), 14 en VIV (+2) , 8 en INT (-1), 10 en PER (0), 12 en VOL (+1) et 4 en CHA (-3)  (17 + 12 + 10 + 14 + 8 + 10 + 12 + 4 = 87)
+				<b>Optionnel:</b> Lancez 1D12 et récupérez les valeurs du tableau ci-dessous selon la valeur obtenue, vous pourrez ensuite utiliser ces valeurs et les répartir dans vos 8 caractéristiques.<br>
+				<table>
+					<tr>
+						<th>Résultat du dé</th>
+						<th>Liste de valeurs</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>12 - 12 - 11 - 10 - 4 - 3 - 2 - 2</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>12 - 12 - 10 - 8 - 5 - 3 - 3 - 3</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>12 - 11 - 10 - 10 - 7 - 2 - 2 - 2</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>12 - 10 - 8 - 7 - 7 - 5 - 4 - 3</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>11 - 11 - 8 - 7 - 6 - 5 - 5 - 3</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>11 - 10 - 9 - 8 - 6 - 5 - 4 - 3</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>11 - 9 - 8 - 8 - 6 - 5 - 5 - 4</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>11 - 9 - 8 - 8 - 7 - 5 - 5 - 3</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>10 - 10 - 8 - 8 - 6 - 6 - 4 - 4</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>10 - 9 - 8 - 7 - 7 - 6 - 5 - 4</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>9 - 9 - 8 - 7 - 7 - 6 - 5 - 5</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>9 - 8 - 8 - 7 - 7 - 7 - 6 - 4</td>
+					</tr>
+				</table>
+				
 			</p>
 		</div>
 	</div>

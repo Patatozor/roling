@@ -11,11 +11,6 @@ class maitrisesModel extends CoreModel
 	return $select->fetchAll();
 	}
 
-	public function show($id)
-	{
-		return $this->readOneFromTable('maitrises',$id);
-	}
-
 	public function insert($label,$description)
 	{
 		try

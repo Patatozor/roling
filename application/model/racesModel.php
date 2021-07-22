@@ -4,12 +4,12 @@ class racesModel extends CoreModel
 {
 	public $_table = "races";
 	
-	public function insert($label,$description, $features, $str, $adr, $end, $agi, $intel, $per, $vol, $soc)
+	public function insert($label,$description, $features, $str, $adr, $end, $agi, $intel, $per, $vol, $cha)
 	{
 		try 
 		{
-			$insert = $this->_db -> prepare('INSERT INTO '.$this->_table.' (label, description, anatomy, str, adr, end, agi, intel, per, vol, soc) 
-				VALUES (:label, :description, :features, :str, :adr, :end, :agi, :intel, :per, :vol, :soc)');
+			$insert = $this->_db -> prepare('INSERT INTO '.$this->_table.' (label, description, anatomy, str, adr, end, agi, intel, per, vol, cha) 
+				VALUES (:label, :description, :features, :str, :adr, :end, :agi, :intel, :per, :vol, :cha)');
 
 			$insert -> bindValue(':label', $label, PDO::PARAM_STR);
 			$insert -> bindValue(':description', $description, PDO::PARAM_STR);
@@ -21,7 +21,7 @@ class racesModel extends CoreModel
 			$insert -> bindValue(':intel', $intel, PDO::PARAM_INT);
 			$insert -> bindValue(':per', $per, PDO::PARAM_INT);
 			$insert -> bindValue(':vol', $vol, PDO::PARAM_INT);
-			$insert -> bindValue(':soc', $soc, PDO::PARAM_INT);
+			$insert -> bindValue(':cha', $cha, PDO::PARAM_INT);
 			$insert -> execute();
 			return $this->_db->lastInsertId();
 		}
@@ -31,14 +31,14 @@ class racesModel extends CoreModel
 		}
 	}
 	
-	public function update($id, $label,$description, $features, $str, $adr, $end, $agi, $intel, $per, $vol, $soc)
+	public function update($id, $label,$description, $features, $str, $adr, $end, $agi, $intel, $per, $vol, $cha)
 	{
 		try
 		{
 			$update = $this->_db -> prepare('UPDATE '.$this->_table.' 
 				SET label = :label, description = :description, anatomy = :features, 
 					str = :str, adr = :adr, end = :end, agi = :agi,
-					intel = :intel, per = :per, vol = :vol, soc = :soc,
+					intel = :intel, per = :per, vol = :vol, cha = :cha
 				WHERE id = :id');
 			$update -> bindValue(':id', $id, PDO::PARAM_INT);
 			$update -> bindValue(':label', $label, PDO::PARAM_STR);
@@ -51,7 +51,7 @@ class racesModel extends CoreModel
 			$update -> bindValue(':intel', $intel, PDO::PARAM_INT);
 			$update -> bindValue(':per', $per, PDO::PARAM_INT);
 			$update -> bindValue(':vol', $vol, PDO::PARAM_INT);
-			$update -> bindValue(':soc', $soc, PDO::PARAM_INT);
+			$update -> bindValue(':cha', $cha, PDO::PARAM_INT);
 			$update -> execute();
 			return true;
 		}
