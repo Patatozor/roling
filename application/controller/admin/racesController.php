@@ -1,24 +1,24 @@
 <?php
 
-class spellsController extends AdminController
+class racesController extends AdminController
 {
-	const VIEWDIR = self::BASEDIR.'spells/';
+	const VIEWDIR = self::BASEDIR.'races/';
 
     public function list(){
-        $this->_view->setTitle('Liste des sorts');
-    	$data = $this->_model->showAll();
+        $this->_view->setTitle('Liste des races');
+    	$data = $this->_model->getAll();
         $this->_view->loadPage('admin/spells/list.php', $data);
     }
 
     public function add(){
-    	$this->_view->setTitle('Ajouter un nouveau sort');
+    	$this->_view->setTitle('Ajouter une nouvelle race');
     	$this->_view->loadPage(self::VIEWDIR.'add.php');
     }
 
     public function edit($id)
     {
     	$data = $this->_model->show($id);
-    	$this->_view->setTitle('Edition du sort '.$data['label']);
+    	$this->_view->setTitle('Edition de la race '.$data['label']);
     	$this->_view->loadPage('admin/spells/edit.php', $data);
     }
 
@@ -46,7 +46,7 @@ class spellsController extends AdminController
 			}
 			else
 			{
-				$this->_view->setTitle('Erreur nouveau sort');
+				$this->_view->setTitle('Erreur nouvelle race');
 				$this->_view->loadPage(self::VIEWDIR.'add.php',$e);
 			}
 		}
@@ -60,7 +60,7 @@ class spellsController extends AdminController
     	}
     	else
 		{
-			$this->_view->setTitle('Erreur suppression sort');
+			$this->_view->setTitle('Erreur suppression race');
 			$this->_view->loadPage(self::VIEWDIR.'list.php',$e);
 		}
     }

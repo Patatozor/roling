@@ -2,17 +2,7 @@
 
 class spellsModel extends CoreModel
 {
-	public function getAll()
-	{
-		$select = $this->_db->prepare('SELECT * FROM spells ORDER BY label ASC;');
-		$select -> execute();
-		return $select -> fetchAll();
-	}
-	
-	public function show($id)
-	{
-		return $this->readOneFromTable('spells',$id);
-	}
+	const TABLE = "spells";
 	
 	public function insert($label,$description, $cost, $range, $difficulty)
 	{
@@ -66,20 +56,6 @@ class spellsModel extends CoreModel
 			$update -> bindValue(':range', $range, PDO::PARAM_STR);
 			$update -> bindValue(':difficulty', $difficulty, PDO::PARAM_STR);
 			$update -> execute();
-			return true;
-		}
-		catch (CustomException $e)
-		{
-			return false;
-		}
-	}
-	
-	public function delete($id)
-	{
-		try {
-			$delete = $this->_db->prepare('DELETE FROM spells WHERE id = :id');
-			$delete->bindValue(':id', $id, PDO::PARAM_INT);
-			$delete->execute();
 			return true;
 		}
 		catch (CustomException $e)

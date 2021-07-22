@@ -2,17 +2,7 @@
 
 class voiesModel extends CoreModel
 {
-	public function showAll()
-	{
-		$select = $this->_db->prepare('SELECT * FROM voies ORDER BY label ASC;');
-		$select -> execute();
-		return $select -> fetchAll();
-	}
-	
-	public function show($id)
-	{
-		return $this->readOneFromTable('voies',$id);
-	}
+	const TABLE = "voies";
 	
 	public function insert($label,$article,$description)
 	{
@@ -43,20 +33,6 @@ class voiesModel extends CoreModel
 			$update -> bindValue(':article', $article, PDO::PARAM_STR);
 			$update -> bindValue(':description', $description, PDO::PARAM_STR);
 			$update -> execute();
-			return true;
-		}
-		catch (CustomException $e)
-		{
-			return false;
-		}
-	}
-
-	public function delete($id)
-	{
-		try {
-			$delete = $this->_db -> prepare('DELETE FROM voies WHERE id = :id');
-			$delete -> bindValue(':id', $id, PDO::PARAM_INT);
-			$delete -> execute();
 			return true;
 		}
 		catch (CustomException $e)

@@ -1,9 +1,8 @@
-<a href="<?php echo HOST ?>admin/spells/list">Retour à la liste</a>
+<a href="<?php echo HOST ?>admin/spells/list/<?php echo $this->_data['id']; ?>">Retour à la liste</a>
 <h1><?php echo $this->_data['label']; ?></h1>
 
 <form action="<?php echo HOST ?>admin/spells/save" method="POST">
 	<div>
-		<input type="number" name="id" value="<?php echo $this->_data['id']; ?>" /><br/>
 		<input name="label" id="label" type="text" placeholder="Nom" value="<?php echo $this->_data['label']; ?>" /><br/>
 		<textarea name="description" id="description"><?php echo $this->_data['description']; ?></textarea><br />
 		<input name="range" id="range" type="text" placeholder="Portée" value="<?php echo $this->_data['casting_range']; ?>" /><br/>

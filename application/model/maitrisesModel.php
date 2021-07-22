@@ -2,6 +2,8 @@
 
 class maitrisesModel extends CoreModel
 {
+	const TABLE = "maitrises";
+
 	public function showAll()
 	{
 	$select = $this->_db->prepare('SELECT * FROM maitrises ORDER BY label ASC');

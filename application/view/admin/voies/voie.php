@@ -27,4 +27,4 @@
 	<input name="rank" type="number"/>
 	<input type="submit" value="valider"/>
 </form>
-<a href="../../skills/add/<?php echo $this->_data['voie']['id']?>">Nouveau sort</a>
+<a href="../../skills/add/<?php echo $this->_data['voie']['id']?>">Nouvelle compétence</a>

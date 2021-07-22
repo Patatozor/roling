@@ -9,6 +9,7 @@
 class CoreModel extends Core
 {
     protected $_db;
+    const TABLE = "core";
 		
 	public function __construct()
     {
@@ -25,18 +26,32 @@ class CoreModel extends Core
 		}
     }
 	
-	public function readAllFromTable($table)
+	public function delete($id)
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.$table);
-		$select -> execute();
-		return $select -> fetchAll();
+		try {
+			$delete = $this->_db->prepare('DELETE FROM '.self::TABLE.' WHERE id = :id');
+			$delete->bindValue(':id', $id, PDO::PARAM_INT);
+			$delete->execute();
+			return true;
+		}
+		catch (CustomException $e)
+		{
+			return false;
+		}
 	}
 	
-	public function readOneFromTable($table, $id)
+	public function show($id)
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.$table.' WHERE id=:id');
+		$select = $this->_db->prepare('SELECT * FROM '.self::TABLE.' WHERE id=:id');
 		$select->bindParam(':id', $id, PDO::PARAM_INT);
 		$select -> execute();
 		return $select -> fetch();
+	}
+
+	public function showAll()
+	{
+		$select = $this->_db->prepare('SELECT * FROM '.self::TABLE);
+		$select -> execute();
+		return $select -> fetchAll();
 	}
 }

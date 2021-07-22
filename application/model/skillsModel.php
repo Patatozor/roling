@@ -2,6 +2,8 @@
 
 class skillsModel extends CoreModel
 {
+	const TABLE = "skills";
+
 	public function getAllVoies()
 	{
 		$select = $this->_db->prepare('SELECT * FROM voies ORDER BY label ASC;');
