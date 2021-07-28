@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rémi
- * Date: 22/04/2016
- * Time: 23:10
- */
 class CoreModel extends Core
 {
     protected $_db;
@@ -48,10 +42,92 @@ class CoreModel extends Core
 		return $select -> fetch();
 	}
 
-	public function showAll()
+	public function showAll($orderby = '', $desc = 0)
 	{
-		$select = $this->_db->prepare('SELECT * FROM '.$this->_table.' ORDER BY label asc');
+		if ($desc == 0)
+		{
+			$desc = 'asc';
+		}
+		else
+		{
+			$desc = 'desc';
+		}
+		if ($orderby != '')
+		{
+			$order = 'ORDER BY '.$orderby.' '.$desc;
+		}
+		else
+		{
+			$order = 'ORDER BY slabel '.$desc;
+		}
+		$select = $this->_db->prepare('SELECT * FROM '.$this->_table.' '.$order);
 		$select -> execute();
 		return $select -> fetchAll();
+	}
+
+	public function insert($data)
+	{
+		try 
+		{
+			$cols = '';
+			foreach ($data as $key => $value)
+			{
+				$cols .= $key.', ';
+				$values .= ':'.$key.', ';
+			}
+			$cols = substr($cols, 0, -2);
+			$values = substr($values, 0, -2);
+			$insert = $this->_db->prepare('INSERT INTO '.$this->_table.' ('.$cols.') VALUES ('.$values.')');
+			foreach ($data as $key => &$value)
+			{
+				if (substr($key, 0, 1) == 's')
+				{
+					$insert->bindParam(':'.$key, $value, PDO::PARAM_STR);
+				}
+				else if (substr($key, 0, 1) == 'i')
+				{
+					$insert->bindParam(':'.$key, $value, PDO::PARAM_INT);
+				}
+			}
+			$insert->execute();
+			return true;
+		}
+		catch (CustomException $e)
+		{
+			return false;
+		}
+	}
+
+	public function update($data, $id)
+	{
+		try 
+		{
+			$set = '';
+			foreach ($data as $key => $value)
+			{
+				$set .= $key.' = :'.$key.', ';
+			}
+			$set = substr($set, 0, -2);
+			echo 'UPDATE '.$this->_table.' SET '.$set.' WHERE id = :id';
+			$update = $this->_db->prepare('UPDATE '.$this->_table.' SET '.$set.' WHERE id = :id');
+			$update->bindParam(':id', $id, PDO::PARAM_INT);
+			foreach ($data as $key => &$value)
+			{
+				if (substr($key, 0, 1) == 's')
+				{
+					$update->bindParam(':'.$key, $value, PDO::PARAM_STR);
+				}
+				else if (substr($key, 0, 1) == 'i')
+				{
+					$update->bindParam(':'.$key, $value, PDO::PARAM_INT);
+				}
+			}
+			$update->execute();
+			return true;
+		}
+		catch (CustomException $e)
+		{
+			return false;
+		}
 	}
 }

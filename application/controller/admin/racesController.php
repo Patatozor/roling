@@ -18,7 +18,7 @@ class racesController extends AdminController
     public function edit($id)
     {
     	$data = $this->_model->show($id);
-    	$this->_view->setTitle('Edition de la race '.$data['label']);
+    	$this->_view->setTitle('Edition de la race '.$data['slabel']);
     	$this->_view->loadPage(self::VIEWDIR.'edit.php', $data);
     }
 
@@ -26,20 +26,20 @@ class racesController extends AdminController
     {
     	if ($id > 0)
 		{
-			$update = $this->_model->update($id, $_POST['label'], $_POST['description'], $_POST['features'], $_POST['str'], $_POST['adr'], $_POST['end'], $_POST['agi'], $_POST['intel'], $_POST['per'], $_POST['vol'], $_POST['cha']);
+			$update = $this->_model->update($_POST, $id);
 			if ($update > 0)
 			{
 				header("Location: ../list");	
 			}
 			else
 			{
-				$this->_view->setTitle('Erreur enregistrement'. $_POST['label']);
+				$this->_view->setTitle('Erreur enregistrement'. $_POST['slabel']);
 				$this->_view->loadPage(self::VIEWDIR.'edit.php',$e);
 			}
 		}
 		else
 		{
-			$insert = $this->_model->insert($_POST['label'], $_POST['description'], $_POST['features'], $_POST['str'], $_POST['adr'], $_POST['end'], $_POST['agi'], $_POST['intel'], $_POST['per'], $_POST['vol'], $_POST['cha']);
+			$insert = $this->_model->insert($_POST);
 			if ($insert > 0)
 			{
 				header("Location: list");	

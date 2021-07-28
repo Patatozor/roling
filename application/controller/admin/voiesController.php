@@ -1,4 +1,5 @@
-<?php 
+<?php
+include_once(MODELDIR.'skillsModel.php'); 
 class voiesController extends AdminController
 {
 	const VIEWDIR = self::BASEDIR.'voies/';
@@ -13,9 +14,9 @@ class voiesController extends AdminController
 		$id = $_GET['id'];
 		$data = [];
 		$data['voie'] = $this->_model->show($id);
-		$data['skills'] = $this->_model->getVoieSkills($id);
-		$data['all_skills'] = $this->_model->getAllSkills();
-		$this->_view->setTitle('Contenu de la voie '.$data['voie']['article'].$data['voie']['label']);
+		$data['skills'] = skillsModel::show($id);
+		$data['all_skills'] = skillsModel::showAll();
+		$this->_view->setTitle('Contenu de la voie '.$data['voie']['sarticle'].$data['voie']['slabel']);
     	$this->_view->loadPage(self::VIEWDIR.'voie.php',$data);
 	}
 	
@@ -26,7 +27,7 @@ class voiesController extends AdminController
 	
 	public function edit($id){
 		$voie = $this->_model->show($id);
-		$this->_view->setTitle('Modifier la voie '.$voie['article'].$voie['label']);
+		$this->_view->setTitle('Modifier la voie '.$voie['sarticle'].$voie['slabel']);
 		$this->_view->loadPage(self::VIEWDIR.'edit.php',$voie);
 	}
 	
@@ -37,12 +38,12 @@ class voiesController extends AdminController
 
 		if ($id > 0)
 		{
-			$update = $this->_model->update($id, $_POST['label'], $_POST['article'], $_POST['description']);
+			$update = $this->_model->update($_POST, $id);
 			$location = "../list";
 		}
 		else
 		{
-			$insert = $this->_model->insert($_POST['label'], $_POST['article'], $_POST['description']);
+			$insert = $this->_model->insert($_POST);
 			$location = "list";
 		}
 		if ($update > 0 || $insert > 0)

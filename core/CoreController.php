@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rémi
- * Date: 22/04/2016
- * Time: 23:10
- */
 class CoreController extends Core
 {
     const DEFAULT_ACTION = DEFAULT_ACTION;

@@ -1,7 +1,7 @@
 <?php
 include_once 'config/prepend.inc.php';
 
-if (isset($_GET['site']) && isset($_GET['module']) && file_exists('application/'.CONTROLLERDIR.$_GET['site'].'/'.$_GET['module'].'Controller.php')){
+if (isset($_GET['site']) && isset($_GET['module']) && file_exists(CONTROLLERDIR.$_GET['site'].'/'.$_GET['module'].'Controller.php')){
 	$site = $_GET['site'];
 	$module = $_GET['module'];
 }
@@ -11,8 +11,8 @@ else
 	$module = DEFAULT_MODULE;
 }
 
-include_once 'application/controller/'.$site.'/'.$module.'Controller.php';
-$model_file = 'application/model/'.$module.'Model.php';
+include_once CONTROLLERDIR.$site.'/'.$module.'Controller.php';
+$model_file = MODELDIR.$module.'Model.php';
 $controller = $module.'Controller';
 
 
@@ -38,8 +38,8 @@ if (MODE_DEBUG)
 		echo "module: ".$_GET['module']."<br/>";
 	if (isset($_GET['action']))
 		echo "action: ".$_GET['action']."<br/>";
-	if (isset($_GET['module']) && !file_exists('application/'.CONTROLLERDIR.$_GET['site'].'/'.$_GET['module'].'Controller.php'))
-		echo 'application/'.CONTROLLERDIR.$_GET['site'].'/'.$_GET['module']."Controller.php n\'est pas un fichier existant<br/>";
-	echo "fichier calculé: ".'application/controller/'.$site.'/'.$module.'Controller.php<br/>';
+	if (isset($_GET['module']) && !file_exists(CONTROLLERDIR.$_GET['site'].'/'.$_GET['module'].'Controller.php'))
+		echo CONTROLLERDIR.$_GET['site'].'/'.$_GET['module']."Controller.php n\'est pas un fichier existant<br/>";
+	echo "fichier calculé: ".CONTROLLERDIR.$site.'/'.$module.'Controller.php<br/>';
 	echo "controller calculé: ".$controller;
 }

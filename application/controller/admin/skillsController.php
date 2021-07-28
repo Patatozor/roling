@@ -22,8 +22,8 @@ class skillsController extends AdminController
 			}
 			else
 			{
-				$label = $_POST['label'];
-				$insert = $this->_model->insert($_POST['label'], $_POST['description'], $_POST['cost'], $_POST['nb_use'], $_POST['type']);
+				$label = $_POST['slabel'];
+				$insert = $this->_model->insert($_POST);
 				if ($insert > 0)
 				{
 					$insert = $this->_model->link_voie_skill($insert, $_POST['voie'], $_POST['rank']);

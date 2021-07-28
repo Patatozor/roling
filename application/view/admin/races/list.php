@@ -16,15 +16,15 @@
 	</tr>
 	<?php foreach($this->_data as $race) { ?>
 		<tr>
-			<td class="align-center"><?php echo $race['label']; ?></td>
-			<td class="align-center"><?php echo $race['str']; ?></td>
-			<td class="align-center"><?php echo $race['adr']; ?></td>
-			<td class="align-center"><?php echo $race['end']; ?></td>
-			<td class="align-center"><?php echo $race['agi']; ?></td>
-			<td class="align-center"><?php echo $race['intel']; ?></td>
-			<td class="align-center"><?php echo $race['per']; ?></td>
-			<td class="align-center"><?php echo $race['vol']; ?></td>
-			<td class="align-center"><?php echo $race['cha']; ?></td>
+			<td class="align-center"><?php echo $race['slabel']; ?></td>
+			<td class="align-center"><?php echo $race['ifor']; ?></td>
+			<td class="align-center"><?php echo $race['iadr']; ?></td>
+			<td class="align-center"><?php echo $race['iend']; ?></td>
+			<td class="align-center"><?php echo $race['iagi']; ?></td>
+			<td class="align-center"><?php echo $race['iint']; ?></td>
+			<td class="align-center"><?php echo $race['iper']; ?></td>
+			<td class="align-center"><?php echo $race['ivol']; ?></td>
+			<td class="align-center"><?php echo $race['icha']; ?></td>
 			<td><a href="edit/<?php echo $race['id']; ?>">Editer</a> <a href="delete/<?php echo $race['id']; ?>">Supprimer</a></td>
 		</tr>
 	<?php } ?>

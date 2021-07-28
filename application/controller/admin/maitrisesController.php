@@ -12,7 +12,7 @@ class maitrisesController extends AdminController
 	public function edit(){
 		$id = $_GET['id'];
 		$maitrise = $this->_model->show($id);
-		$this->_view->setTitle('Modifier la maitrise '.$maitrise['label']);
+		$this->_view->setTitle('Modifier la maitrise '.$maitrise['slabel']);
 		$this->_view->loadPage(self::VIEWDIR.'edit.php',$maitrise);
 	}
 
@@ -28,12 +28,12 @@ class maitrisesController extends AdminController
 
 		if ($id > 0)
 		{
-			$update = $this->_model->update($id, $_POST['label'], $_POST['description']);
+			$update = $this->_model->update($_POST, $id);
 			$location = "../list";
 		}
 		else
 		{
-			$insert = $this->_model->insert($_POST['label'], $_POST['description']);
+			$insert = $this->_model->insert($_POST);
 			$location = "list";
 		}
 		if ($update > 0 || $insert > 0)

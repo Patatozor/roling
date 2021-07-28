@@ -11,9 +11,9 @@
 	</tr>
 	<?php foreach($this->_data as $spell) { ?>
 		<tr>
-			<td><?php echo $spell['label']; ?></td>
-			<td class="align-center"><?php echo $spell['difficulty']; ?></td>
-			<td><?php echo $spell['description']; ?><br/><span class="small">Portée du sort: <?php echo $spell['casting_range']; ?><br />Coût en points de magie: <?php echo $spell['cost']; ?></span></td>
+			<td><?php echo $spell['slabel']; ?></td>
+			<td class="align-center"><?php echo $spell['sdifficulty']; ?></td>
+			<td><?php echo $spell['sdesc']; ?><br/><span class="small">Portée du sort: <?php echo $spell['srange']; ?><br />Coût en points de magie: <?php echo $spell['scost']; ?></span></td>
 			<td><a href="edit/<?php echo $spell['id']; ?>">Editer</a> <a href="delete/<?php echo $spell['id']; ?>">Supprimer</a></td>
 		</tr>
 	<?php } ?>

@@ -1,7 +1,7 @@
 <table>
 	<thead>
 		<tr>
-			<td colspan="3"><b class="cap">Voie <?php echo $this->_data['voie']['article'].$this->_data['voie']['label'] ?></b></td>
+			<td colspan="3"><b class="cap">Voie <?php echo $this->_data['voie']['sarticle'].$this->_data['voie']['slabel'] ?></b></td>
 		</tr>
 	</thead>
 	<?php foreach ($this->_data['skills'] as $skill) { ?>
